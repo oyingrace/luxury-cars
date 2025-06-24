@@ -85,9 +85,9 @@ export default function FeaturedCars() {
     <section id="fleet" className="py-20 bg-black" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          /* initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6 }} */
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -105,9 +105,9 @@ export default function FeaturedCars() {
           {cars.map((car, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: 50 }}
+              /* initial={{ opacity: 0, x: 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }} */
               className="bg-gray-900 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group"
             >
               {/* Image */}
