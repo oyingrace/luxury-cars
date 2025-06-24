@@ -174,9 +174,9 @@ export default function FeaturedCars() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          /* initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.8 }} */
           className="text-center mt-12"
         >
           <button className="border-2 border-amber-400 text-amber-400 px-8 py-3 rounded-full hover:bg-amber-400 hover:text-black transition-all duration-300 font-semibold">
