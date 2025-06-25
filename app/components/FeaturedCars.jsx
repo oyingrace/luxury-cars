@@ -82,37 +82,31 @@ export default function FeaturedCars() {
   }
 
   return (
-    <section id="fleet" className="py-20 bg-black" ref={ref}>
+    <section id="fleet" className="py-20 bg-white" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          /* initial={{ opacity: 0, x: -50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-          transition={{ duration: 0.6 }} */
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Featured <span className="text-amber-400">Fleet</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Featured <span className="text-amber-500">Fleet</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover our handpicked selection of the world's most desirable supercars, 
             luxury vehicles, and high-performance machines
           </p>
         </motion.div>
-
+  
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-3 gap-8"
         >
           {cars.map((car, index) => (
             <motion.div
               key={index}
-              /* initial={{ opacity: 0, x: 50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }} */
-              className="bg-gray-900 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group"
+              className="bg-gray-50 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group shadow-lg hover:shadow-xl"
             >
               {/* Image */}
-              <div className="relative h-64 bg-gray-800 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent z-10" />
+              <div className="relative h-64 bg-gray-200 overflow-hidden">
+                <div className="absolute" />
                 <img
                   src={car.image}
                   alt={car.name}
@@ -124,47 +118,47 @@ export default function FeaturedCars() {
                   </div>
                 )}
               </div>
-
+  
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-amber-400 text-sm font-medium uppercase tracking-wide">
+                  <span className="text-amber-500 text-sm font-medium uppercase tracking-wide">
                     {car.specs.type}
                   </span>
                   <div className="flex items-center space-x-1">
-                    <Star size={16} className="text-amber-400 fill-current" />
-                    <span className="text-white text-sm">{car.rating}</span>
+                    <Star size={16} className="text-amber-500 fill-current" />
+                    <span className="text-gray-900 text-sm">{car.rating}</span>
                   </div>
                 </div>
-
-                <h3 className="text-2xl font-bold text-white mb-2">{car.name}</h3>
-                <p className="text-gray-400 text-sm mb-4">{car.model}</p>
-
+  
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">{car.name}</h3>
+                <p className="text-gray-500 text-sm mb-4">{car.model}</p>
+  
                 {/* Specs */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-center space-x-2 text-gray-300">
-                    <Zap size={16} className="text-amber-400" />
+                  <div className="flex items-center space-x-2 text-gray-600">
+                    <Zap size={16} className="text-amber-500" />
                     <span className="text-sm">{car.specs.power}</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-gray-300">
-                    <Calendar size={16} className="text-amber-400" />
+                  <div className="flex items-center space-x-2 text-gray-600">
+                    <Calendar size={16} className="text-amber-500" />
                     <span className="text-sm">{car.specs.acceleration}</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-gray-300">
-                    <Users size={16} className="text-amber-400" />
+                  <div className="flex items-center space-x-2 text-gray-600">
+                    <Users size={16} className="text-amber-500" />
                     <span className="text-sm">{car.specs.seats}</span>
                   </div>
                 </div>
-
+  
                 {/* Pricing */}
-                <div className="border-t border-gray-800 pt-4">
+                <div className="border-t border-gray-200 pt-4">
                   <div className="flex items-baseline space-x-2 mb-2">
-                    <span className="text-3xl font-bold text-white">{car.price}</span>
-                    <span className="text-gray-400">{car.period}</span>
+                    <span className="text-3xl font-bold text-gray-900">{car.price}</span>
+                    <span className="text-gray-500">{car.period}</span>
                   </div>
-                  <p className="text-sm text-gray-400 mb-4">{car.weekend}</p>
+                  <p className="text-sm text-gray-500 mb-4">{car.weekend}</p>
                   
-                  <button className="w-full bg-amber-400 text-black py-3 rounded-full font-semibold hover:bg-amber-500 transition-colors duration-300">
+                  <button className="w-full bg-amber-500 text-white py-3 rounded-full font-semibold hover:bg-amber-600 transition-colors duration-300">
                     Reserve Now
                   </button>
                 </div>
@@ -172,14 +166,14 @@ export default function FeaturedCars() {
             </motion.div>
           ))}
         </motion.div>
-
+  
         <motion.div
           /* initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.8 }} */
           className="text-center mt-12"
         >
-          <button className="border-2 border-amber-400 text-amber-400 px-8 py-3 rounded-full hover:bg-amber-400 hover:text-black transition-all duration-300 font-semibold">
+          <button className="border-2 border-amber-500 text-amber-500 px-8 py-3 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300 font-semibold">
             View Complete Fleet
           </button>
         </motion.div>

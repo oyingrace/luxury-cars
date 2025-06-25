@@ -17,7 +17,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-20 bg-gray-900" ref={ref}>
+    <section id="about" className="py-20 bg-gray-50" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -26,40 +26,40 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Drive Something <span className="text-amber-400">Extraordinary</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Drive Something <span className="text-amber-500">Extraordinary</span>
             </h2>
-
+  
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-amber-400 rounded-full mt-2" />
-                <p className="text-gray-300">
-                  <span className="text-white font-semibold">Curated Fleet:</span> Every vehicle 
+                <div className="w-2 h-2 bg-amber-500 rounded-full mt-2" />
+                <p className="text-gray-600">
+                  <span className="text-gray-900 font-semibold">Curated Fleet:</span> Every vehicle 
                   in our collection is meticulously maintained and regularly updated
                 </p>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-amber-400 rounded-full mt-2" />
-                <p className="text-gray-300">
-                  <span className="text-white font-semibold">Professional Service:</span> Our team 
+                <div className="w-2 h-2 bg-amber-500 rounded-full mt-2" />
+                <p className="text-gray-600">
+                  <span className="text-gray-900 font-semibold">Professional Service:</span> Our team 
                   provides discreet, first-class service tailored to your needs
                 </p>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-amber-400 rounded-full mt-2" />
-                <p className="text-gray-300">
-                  <span className="text-white font-semibold">Nationwide Coverage:</span> Delivery 
+                <div className="w-2 h-2 bg-amber-500 rounded-full mt-2" />
+                <p className="text-gray-600">
+                  <span className="text-gray-900 font-semibold">Nationwide Coverage:</span> Delivery 
                   and collection services available across the UK
                 </p>
               </div>
             </div>
-
-            <button className="bg-amber-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-amber-500 transition-colors duration-300">
+  
+            <button className="bg-amber-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-amber-600 transition-colors duration-300">
               Learn More About Us
             </button>
           </motion.div>
-
+  
           {/* Stats */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -73,13 +73,13 @@ export default function About() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 text-center hover:border-amber-400/50 transition-all duration-300"
+                className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl p-6 text-center hover:border-amber-500/50 transition-all duration-300 shadow-lg"
               >
-                <div className="text-amber-400 mx-auto mb-4">
+                <div className="text-amber-500 mx-auto mb-4">
                   <stat.icon size={48} />
                 </div>
-                <div className="text-3xl font-bold text-white mb-2">{stat.number}</div>
-                <div className="text-gray-400 text-sm uppercase tracking-wide">{stat.label}</div>
+                <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
+                <div className="text-gray-500 text-sm uppercase tracking-wide">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>

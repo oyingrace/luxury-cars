@@ -58,18 +58,18 @@ export default function Services() {
 
   const ServiceCard = ({ service, index }) => (
     <div className="flex-shrink-0 w-80 md:w-96 mx-4">
-      <div className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 hover:border-amber-400/50 transition-all duration-300 group h-full">
-        <div className="text-amber-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+      <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 hover:border-amber-400/50 transition-all duration-300 group h-full shadow-lg">
+        <div className="text-amber-500 mb-6 group-hover:scale-110 transition-transform duration-300">
           <service.icon size={48} />
         </div>
         
-        <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-        <p className="text-gray-300 mb-6 leading-relaxed">{service.description}</p>
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
         
         <ul className="space-y-2">
           {service.features.map((feature, idx) => (
-            <li key={idx} className="flex items-center text-gray-400">
-              <div className="w-2 h-2 bg-amber-400 rounded-full mr-3" />
+            <li key={idx} className="flex items-center text-gray-500">
+              <div className="w-2 h-2 bg-amber-500 rounded-full mr-3" />
               {feature}
             </li>
           ))}
@@ -77,9 +77,9 @@ export default function Services() {
       </div>
     </div>
   )
-
+  
   return (
-    <section id="services" className="py-20 bg-gray-900 overflow-hidden" ref={ref}>
+    <section id="services" className="py-20 bg-gray-50 overflow-hidden" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -87,15 +87,15 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Premium <span className="text-amber-400">Services</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Premium <span className="text-amber-500">Services</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             From self-drive adventures to chauffeur-driven luxury, we provide comprehensive 
             services tailored to your unique requirements
           </p>
         </motion.div>
-
+  
         <div className="space-y-8">
           {/* Top Row - Sliding Right */}
           <motion.div
@@ -123,7 +123,7 @@ export default function Services() {
               ))}
             </motion.div>
           </motion.div>
-
+  
           {/* Bottom Row - Sliding Left */}
           <motion.div
             initial={{ opacity: 0, x: 100 }}
