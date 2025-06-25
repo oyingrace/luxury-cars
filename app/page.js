@@ -13,8 +13,8 @@ export default function Home() {
     <main className="bg-black text-white min-h-screen overflow-x-hidden hide-scrollbar">
       <Navbar />
       <Hero />
-      <Services />
       <FeaturedCars />
+      <Services />
       <About />
       {/* <Testimonials /> */}
       <Contact />
