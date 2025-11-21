@@ -16,7 +16,7 @@ export default function Testimonials() {
       role: 'Corporate Executive',
       image: '/avatar-1.jpg',
       rating: 5,
-      text: 'Exceptional service from start to finish. The Lamborghini Huracán was immaculate and the team went above and beyond to ensure our corporate event was memorable. Professional, discrete, and absolutely worth every penny.'
+      text: 'Exceptional service. The Lamborghini Huracán was immaculate and the team went above and beyond to ensure our corporate event was memorable. Professional, discrete, and absolutely worth every penny.'
     },
     {
       name: 'Sarah Mitchell',
