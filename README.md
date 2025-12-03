@@ -23,8 +23,6 @@ A modern, responsive website for a luxury car rental service showcasing premium 
 - **Fonts**: Geist Sans & Geist Mono (local fonts)
 - **Wallet Integration**: WalletConnect (Reown WalletKit)
 
-## 📦 Project Structure
-
 ```
 luxury-cars/
 ├── app/
