@@ -14,3 +14,4 @@ plan:
        path: contracts/announcements-system-v1.clar
        anchor-block-only: true
        clarity-version: 4
+       epoch: "3.3"
