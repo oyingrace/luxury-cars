@@ -6,3 +6,4 @@
 (map-set logs id {user: tx-sender, action: action, target: target})
 (var-set log-id (+ id u1))
 (ok id)))
+(define-read-only (get-log (id uint))
