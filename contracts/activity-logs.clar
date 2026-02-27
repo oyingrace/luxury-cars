@@ -5,3 +5,4 @@
 (let ((id (var-get log-id)))
 (map-set logs id {user: tx-sender, action: action, target: target})
 (var-set log-id (+ id u1))
+(ok id)))
