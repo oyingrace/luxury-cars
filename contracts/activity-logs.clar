@@ -7,3 +7,4 @@
 (var-set log-id (+ id u1))
 (ok id)))
 (define-read-only (get-log (id uint))
+(map-get? logs id))
