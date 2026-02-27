@@ -4,3 +4,4 @@
 (define-public (log-activity (action (string-ascii 100)) (target (string-ascii 100)))
 (let ((id (var-get log-id)))
 (map-set logs id {user: tx-sender, action: action, target: target})
+(var-set log-id (+ id u1))
