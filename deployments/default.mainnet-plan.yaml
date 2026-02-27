@@ -10,3 +10,5 @@ plan:
        - contract-publish:
        contract-name: announcements-system-v1
        expected-sender:
+       cost: 19000
+       path: contracts/announcements-system-v1.clar
