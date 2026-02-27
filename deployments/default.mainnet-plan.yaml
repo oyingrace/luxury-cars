@@ -8,3 +8,4 @@ plan:
    - id: 0
       transactions:
        - contract-publish:
+       contract-name: announcements-system-v1
