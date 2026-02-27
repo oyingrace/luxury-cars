@@ -8,10 +8,10 @@ plan:
    - id: 0
       transactions:
        - contract-publish:
-       contract-name: announcements-system-v1
-       expected-sender:
-       cost: 19000
-       path: contracts/announcements-system-v1.clar
-       anchor-block-only: true
-       clarity-version: 4
-       epoch: "3.3"
+        contract-name: announcements-system-v1
+        expected-sender: SP000000000000000000002Q6VF78
+        cost: 19000
+        path: contracts/announcements-system-v1.clar
+        anchor-block-only: true
+        clarity-version: 4
+        epoch: "3.3"
