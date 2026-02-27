@@ -9,3 +9,4 @@ plan:
       transactions:
        - contract-publish:
        contract-name: announcements-system-v1
+       expected-sender:
