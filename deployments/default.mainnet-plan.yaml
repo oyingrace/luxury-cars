@@ -12,3 +12,4 @@ plan:
        expected-sender:
        cost: 19000
        path: contracts/announcements-system-v1.clar
+       anchor-block-only: true
