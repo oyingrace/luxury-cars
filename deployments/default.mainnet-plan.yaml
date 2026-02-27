@@ -13,3 +13,4 @@ plan:
        cost: 19000
        path: contracts/announcements-system-v1.clar
        anchor-block-only: true
+       clarity-version: 4
